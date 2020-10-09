@@ -1,0 +1,176 @@
+body {
+  margin: auto;
+  text-align: center;
+}
+h1 {
+  font-size: 10em;
+  font-weight: 900;
+  font-style: italic;
+  font-family: 'Playfair Display', serif;
+}
+h2, h3, h5 {
+  font-family: 'Montserrat', sans-serif;
+}
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+}
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 0;
+}
+
+li {
+  padding: 0.6em;
+}
+
+footer {
+  text-align: center;
+  background-color: #ead1bb;
+  padding: 2%;
+  color: white;
+}
+
+.header {
+  padding: 7% 15%;
+  margin: 50px auto;
+  text-align: center;
+  color:#c3a343;
+  border-style: solid;
+  border-width: 3px;
+  width:60%;
+}
+
+.tableCards {
+  background-color: #c3cfd8;
+}
+
+/* Carousel */
+@media (min-width: 768px) {
+  /* show 3 items */
+  .carousel-inner .active {
+    display: block;
+  }
+
+  .card {
+    text-align: center;
+    height: 250px;
+  }
+  .container-fluid {
+    padding: 3%;
+    width: 60%;
+    margin: auto;
+  }
+
+
+.card-title {
+  padding-bottom: 3%;
+  font-weight: bold;
+}
+  #myCarousel {
+    padding: 3%;
+  }
+
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next,
+  .carousel-inner .carousel-item-prev {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+
+
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+
+
+
+/* Carousel end */
+.input-field {
+  margin: auto;
+  width: 60%;
+}
+
+.welcome-and-data-entry {
+  padding: 50px;
+  background-image: url("images/63129-min.jpg");
+  background-size: cover;
+}
+.row {
+  text-align: center;
+  padding: 100px;
+}
+.card {
+  padding: 20px 7px;
+}
+.map {
+  background-image: url("images/9.jpg");
+  /* background-color: #fdf6ec; */
+  padding: 3%;
+}
+.mapimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+/* Button */
+.myButton {
+  box-shadow: inset 0px 1px 0px 0px #ffffff;
+  background: linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+  background-color: #ffffff;
+  border-radius: 6px;
+  border: 1px solid #dcdcdc;
+  display: inline-block;
+  cursor: pointer;
+  color: #666666;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.myButton:hover {
+  background: linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+  background-color: #f6f6f6;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+/* Button End */
